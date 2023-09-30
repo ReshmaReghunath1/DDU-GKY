@@ -57,7 +57,15 @@ To assess the performance of the models, various metrics were used, including:
 
 ## Saving the Model
 
-The trained machine learning model(s) might have been saved using the Pickle library for later use or deployment.
+The trained machine learning model(s) were saved and loaded using the Pickle library for later use or deployment. To use a saved model:
+
+1. Load the saved model using the `pickle` library. Example:
+   ```python
+   import pickle
+
+   with open('saved_model.pkl', 'rb') as model_file:
+       loaded_model = pickle.load(model_file)
+Use the loaded model for predictions or further analysis.
 
 ## How to Use
 
