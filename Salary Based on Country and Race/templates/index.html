@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Salary Prediction</title>
+    <style>
+        body {
+            background-image: url("C:\Users\USER\Reshma Reghunath\WebPage\templates\salary.jpg"); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Salary prediction using Regression model</h1><br><br><br>
+        <div class="form">
+            <form action="/predict" method="post">
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" id="Age" placeholder="Age"><br><br><br>
+                <label for="YearsofExperience">Years of Experience:</label>
+                <input type="number" name="YearsofExperience" id="YearsofExperience" placeholder="Years of Experience"><br><br><br>
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
